@@ -109,3 +109,8 @@ body {
     display: inline-block;
      border-radius: 50%;
 }
+
+.inner {
+    width: 50%;
+    margin: 0 auto; 
+}
