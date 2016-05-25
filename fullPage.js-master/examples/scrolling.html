@@ -1,5 +1,91 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/tree.ico">
+
+    <title>Be The Change</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="T:/bethechangeNewJersey.github.io-master/css/bootstrap.min.css" rel="stylesheet">
+    <link href="T:/bethechangeNewJersey.github.io-master/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="T:/bethechangeNewJersey.github.io-master/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="T:/bethechangeNewJersey.github.io-master/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Carousel custom JS -->
+    <script src="bethechangeNewJersey.github.io-master/js/carousel.js"></script>
+
+    <!-- Bootstrap core JS -->
+    <script type="text/javascript" src="/js/jquery-1.12.3.min.js"></script>
+	<!--<script type="text/javascript" src="/js/bootstrap.min.js"></script>-->
+	<script type="text/javascript" src="/js/dropdown.js"></script>
+    <script src="T:/bethechangeNewJersey.github.io-master/js/bootstrap.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="T:/bethechangeNewJersey.github.io-master/css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                
+                <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <center><ul class="nav navbar-nav">
+                <li class="Home.html"><a href="index.html">Home</a></li>
+                <li><a href="About.html">Our Story</a></li>
+                
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">About The Organization<li>
+                    <li><a href="Supporters.html">Our Supporters</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                  </ul>
+                </li>
+                  <li><a href="Contact.html">Contact Us</a></li>
+                  <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                  </ul>
+                
+            </div>
+          </div>
+        </nav>
+          
+      </div>
+    </div>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,16 +103,61 @@
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
+		font-size: 4em;
+		font-family: helvetica;
 		color: #fff;
-		margin:0;
+		text-shadow: 2px 2px 2px #000000;		
 		padding:40px 0 0 0;
+		margin-right: 5%;
+		margin-left: 5%;
+		
+
+	}
+	h2{
+		font-size:3em;
+		font-family: helvetica;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000000;
+		margin-right: 5%;
+		margin-left: 5%;
+
+		padding:40px 0 0 0;
+		text-align: left;}
+	h3{
+		font-size:2em;
+		font-family: helvetica;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000000;
+		margin-right: 5%;
+		margin-left: 5%;
+		padding:40px 0 0 0;
+		text-align: left;
+	}
+	blockquote{
+		text-align: justify;
+		text-shadow: 3px #000000;
+		margin-right: 7%;
+		margin-left: 7%;
+	}
+	#date{
+		font-size:1em;
+	}
+	a{
+		color: #fff;
 	}
 	.intro p{
 		color: #fff;
 		padding:40px 0 0 0;
 	}
+	p{
+		text-align: left;
+		font-size:1.5em;
+		color: #000000;
+		margin-right: 5%;
+		margin-left: 5%;
+
+	}
+
 
 	/* Centered texts in each section
 	* --------------------------------------- */
@@ -60,65 +191,191 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-				sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+				sectionsColor: ['#D3D3D3', '#939FAA', '#D3D3D3', '#939FAA'],
 				scrollOverflow: true
 			});
 		});
-	</script>
+</script>
 
 </head>
 <body>
 
-<select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-  <option id="looping">Looping</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-  <option id="easing">Easing</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="css3">CSS3</option>
-  <option id="continuous">Continuous scrolling</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scrolling">Scroll inside sections and slides</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-  <option id="oneSection">One single section</option>
-  <option id="responsiveHeight">Responsive Height</option>
-  <option id="responsiveWidth">Responsive Width</option>
-  <option id="methods">Methods</option>
-</select>
 
 <div id="fullpage">
 	<div class="section " id="section0">
-		<div class="intro">
-			<h1>Scrolling inside sections</h1>
-			<p>Easy and useful! Just make use of the option `scrollOverflow` for it and add the slimScroll plugin! <br></p>
+		<div>
+			<p><!--Page Break--></p>
+			<br>
+			<br>
+			<h1>Be The Change Blog</h1>
 
+<h2 class="blog-post-title">Myrtle Avenue Transformation</h2>
+            <p class="blog-post-meta" id="date">Friday, 02 October 2015 23:04 <br><a href="#">Corina Hernandez</a></p>
 
-			<img src="./imgs/iphone2.png" alt="iphone" id="iphone-two" />
+            <img src="T:/bethechangeNewJersey.github.io-master/img/myrtle1.jpg">
+            <img src="T:/bethechangeNewJersey.github.io-master/img/myrtle2.jpg">
 
-			<p>Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte.
+            <h3>A Call for Change:</h3><p>
 
-	Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui.
+            Imagine looking out of your bedroom window and seeing a half torn down hospital building with rubble hanging from all sides. Well, this was the view of a young boy that lives on Myrtle Ave in Newark, New Jersey. </p><br>
 
-	Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri verterem. Nam at animal pertinax efficiantur.
+            <p>After hearing an inspirational presentation about Be The Change, a woman approached Dr. Norma Bowe at a Fortune Builders event. She asked Dr. Bowe if Be The Change could transform a lot on Myrtle Avenue in Newark. The woman recieved Dr. Bowe's favorite famous answer, “yes,” and Be The Change began planning. </p>
+            
+            <h3>Creating Community Change in One Day:</h3>
+            <p>
 
-	Per alienum torquatos eu. Sed saepe quodsi et, ullum choro definitionem sed et. Ullum elitr comprehensam sed at, sint illum propriae per eu. Eu enim laudem reformidans vel. Pro clita quando ad. Usu te virtute quaestio, ut eruditi tacimates volutpat per.
+            After members of the group surveyed the lot they knew that gathering a large team would be the only way to make real transformation happen. At first, the group feared the lot would not be addressed before the cold weather hit. After posting the event multiple times on social media, volunteers started to sign up.  A fraternity group said, “Yes we will send a couple of our guys!” Next, a couple of other volunteers joined and said “what’s the address, I’ll be there.” This great news locked in the project.</p>
+            <br>
+            <p>Dr.Bowe and a small team went to Home Depot to pick up supplies. They were gifted with a $75 gift card from the generous people at Home Depot in Edison, NJ. Paint, ply wood, paint brushes, garbage bags, and rocks filled the back of a volunteer’s truck.  And so, on Sunday September 27th approximately 28 volunteers gathered in the lot with bagels, coffee, and a mission. </p>
+            <br>
+            <p>
+            One corner of the lot was filled with weeds and garbage. After it was cleared the group discovered a pile of rocks.  Unsure of what to do with the rocks, volunteers began writing things like ‘love, peace and hope.’  The pile became a piece of colorful artwork for the community.</p>
 
-	Affert accusamus duo ex, ea pri habeo graece, cu magna dolorum sea. Quas dictas assueverit ad qui, cu duo harum fabulas apeirian, ullum gubergren et sit. Ne cetero recusabo adipiscing quo, cu harum quaestio neglegentur cum. Has tation aliquip ad, virtute volumus definitionem mel ne. Nobis audiam civibus ius at.
+            <h3>Community Responses:</h3>          
+            <p>                          
+            Soon people were walking by complimenting and commending the work that was being done.  A woman with her small toddler in a stroller walked by; the little girl screamed “I like it!”</p>
+            <br>
 
-	Ei eum hinc mutat inciderint. Cu maluisset assentior per, graecis ponderum no mel. Eum eu vitae quando gloriatur, cum graece percipitur no, sed errem maiestatis te. Sed porro epicuri te, ad nam malorum verterem. Ea zril aliquip euismod sed.
+            <p>Next, another woman was bringing candy, cold drinks, and even pizza for the entire group! Everyone was humbled and grateful for these responses.</p>
+            <br>
 
-		  </p>
+            <p>Whenever Be The Change completes a project the physical space is never the same.  It has more hope, more love, more peace, and more inspiration. On this day, Be The Change left a hand print on Myrtle Avenue. The volunteers gave the gift of transformation to the little boy that once looked out his window and only saw rubble and chaos. </p>
+            <br>
 		</div>
 	</div>
+		<div class="section " id="section0">
+		<div>
+			<p><!--Page Break--></p>
+
+
+<h2 class="blog-post-title">Vertical Garden Launch</h2>
+            <p class="blog-post-meta" id="date">Friday, 05 June 2015 03:41 <br><a href="#">Melissa Heron</a></p>
+
+            <img src="T:/bethechangeNewJersey.github.io-master/img/vertical garden.jpg">
+
+            <p>We are excited to announce the launch of our first local vertical garden. Today Be The Change NJ members and employees of Neuberger Berman installed a vertical garden at Liberty Hall, in Union New Jersey. The vertical garden was filled with vegetables and herbs which will aid in our organization's mission for food justice. Thanks to a generous grant from Nueberger Berman we look forward to being able to provide fresh fruits and vegetables to families and surrounding communities that lack this vital resource. This is garden is the first of several that will be implemented over the course of the summer. We are excited to install them and help our communities live a healthier lifestyle. </p>
+            <br>
+		</div>
+	</div>
+<div class="section " id="section0">
+	<div>
+			<p><!--Page Break--></p>
+
+			<br>
+			<br>
+<h2 class="blog-post-title">Gwen Carr: A Mother On A Mission</h2>
+            <p class="blog-post-meta" id="date">Monday, 11 May 2015 08:13 <br><a href="#">Melissa Heron</a></p>
+
+            <img src="T:/bethechangeNewJersey.github.io-master/img/gwen.jpg">
+
+           <h3>Gwen Carr lost her son and now she wants to help save your sons and daughters.</h3>
+
+        <p>Many of us had the opportunity to speak to our mothers and or children on Mother’s Day, this was not the case for Mrs. Carr. She lost her son, Eric Garner, almost ten months ago during an altercation with the Staten Island police.</p>
+        <br>
+        <p>A few days before her son was killed she spoke to her son about an upcoming family gathering. The last words of their final conversation were:</p>
+        <br>
+        <blockquote>
+          <em><strong>Gwen Carr:</strong> “I’ll see you Saturday Eric. Love you.” 
+          <br>
+          <strong>Eric Garner:</strong> “Love you too Ma.”</em>
+        </blockquote>
+        <p>The loss is at the top of a list of major life changes that this mother is experiencing. In February, Mrs. Carr retired from the Metropolitan Transportation Authority after almost 23 years of service.<strong> She has now forged a new path, as an activist.</strong></p>
+        <br>
+        <p>On Wednesday, May 6th she was the guest speaker in Dr. Norma Bowe’s Health and Social Activism class, at Kean University in Union, New Jersey. In a candid and emotional interview Mrs. Carr opened up about the day her son died, the aftermath and her new mission.</p>
+        <br>
+        <p><strong>Can you walk us through the events of the day that your son died?</strong></p>
+        <br>
+        <blockquote>
+        	<em><strong>Gwen Carr:</strong> I was at work. In the afternoon I went on break and turned on my cell phone. It began ringing. The first call was someone telling me that something had happened with Eric and the police, but they didn’t have any details. When I hung up, I received another call telling me the same thing, but again no details. Just knowing something happened made me very anxious and nervous.
+        	<br><br>
+        I called my husband and I told him what I had heard. He came and picked me up from work. I still didn’t know what the circumstances were. My husband knew, but he was trying to get me home before he told me. I kept questioning him during the ride home and finally he told me. I lost it. When I got home I couldn’t talk to anyone. I still didn’t know the circumstances of Eric’s death and I didn’t know about the video.
+        <br><br>
+        There was quite a bit of press. At about 11 or 12 p.m. my family decided to talk to one reporter from the Daily News. He took our statements and when he was done he informed us about the video. The next morning my brother-in-law got the paper and I lost it when I saw those pictures. (To this day I have not seen the video in its entirety. I just can’t look at it.)
+        <br><br>
+        People were coming from everywhere. Then we got a call to go meet Reverend Sharpton. We didn’t know him before then. After we met him, he told his staff, “See what the family needs and give them what they need.” That was a shock because he didn’t know us.
+        <br><br>
+        I know people say negative things about him, but to my family he has been a gem. People are putting in the paper that we have to pay him back, but that’s not true. He told us from the beginning, “You don’t owe us anything. We can’t bring your son back.”
+        <br><br>
+        To know I spoke to my son a few days earlier laughing and talking as usual it was just too much for me. It just hurts so bad to know that he’s not here anymore, especially with the circumstances of his death. He was not armed. He was not committing a crime. Yes he did sometimes sell loose cigarettes on the street, but at the time he wasn’t doing it. And even if he was the sentence for that is not death.
+        
+   
+        <br><br>
+         <strong>If he would’ve been a white man named Eric Garner in Scarsdale (NY) they would’ve given him a ticket/fine, and told him to stop selling cigarettes on the street.</strong><br><br>
+        My son’s death is senseless. Why kill a man for no reason? And it’s not just my son, it can happen to anyone. I wouldn’t wish this on another mother’s son. It’s heartbreaking and you’ll never get over it. The scenario plays over and over in my head. It will be with me for the rest of my life like a reoccurring nightmare, but in fact it’s worse than a nightmare because I never wake up. It’s always going to be there.</em></blockquote>
+        <p><strong>What is your opinion of the recent Time Magazine cover which suggests that nothing has changed for African Americans from 1968 to present day?</strong></p>
+        <br>
+       <blockquote><em><strong>Gwen Carr:</strong> There hasn’t been much change since the 1960s. They say we are in free America, but there’s nothing free in America for people of color and Latinos – they treat us so brutally. There is injustice in all races, but people of color suffer the most.</em></blockquote>
+       <br>
+        <p><strong>What was it like when you turned on the television and saw the rioting in Baltimore?</strong></p>
+        <br>
+        <blockquote><em><strong>Gwen Carr:</strong> That was sad. I know they were angry because Freddie Gray was killed, but you don’t burn down where you live. You have to shop there. You have to work there. Your children go to school there. You can protest, but protest positively. There was already so little in the community, so why burn that down. People worked for years to build some of those businesses.</em></blockquote>
+        <br>
+        <p><strong>How do you feel about the Baltimore mother’s reaction to her son’s actions during the riot?</p></strong><br>
+        <blockquote><em><strong>Gwen Carr:</strong> She has my vote. If it was my son I would feel the same way. You can’t be out there throwing rocks at the police. The police could gun you down. Look at what just happened, he could’ve been another statistic. I would’ve done the same thing she did.</em></blockquote><br>
+        <strong><p>The deaths of Trayvon Martin, Mike Brown, and your son Eric Garner have raised the blinds on the brutal policing of black men in American. Families like yours have stepped up and asked for accountability, yet despite the coverage, the protests, the circumstances of these deaths, despite creating a prevailing sense that the longstanding racial injustices against blacks is still prevalent, this continues to happen, as is the case with Freddie Gray. Why do you think this is case?</p></strong><br>
+        <blockquote><em><strong>Gwen Carr:</strong> Some police officers think they are above the law, and I think that they are angry that regular citizens are stepping up and trying to show what’s actually wrong with our society. Our unarmed black men and boys are being brutalized by police for no good reason. I think they are trying to show that they still have power and control.</em></blockquote><br>
+        <strong><p>Eric’s death is a tremendous loss, but it has also led you onto a new path – activism. What is life like now?</p></strong><br>
+        <blockquote><em><strong>Gwen Carr:</strong> Life is changed for me. It has changed forever. I used to be a very low key individual. I went about my daily routine and kept to myself, but the death of my son it has really magnified the reality of how cruel and inhumane police officers are towards people of color. I heard stories before about what was going on, but it didn’t hit home. You feel bad when you see those and hear about these things, but you really don’t know until it actually happens to you.<br>
+         
+        After it happened to me, it was an awakening and I became much more aware of what was happening around me, across the country and the world. I’ve learned a lot since this happened to me. There was so much I was unaware of. It was so sad to learn about all these injustices. I now have an obligation to speak out, to march, to rally, to do whatever it takes until my voice is heard.<br>
+         
+        I feel like I have to do this. I have to try to wake people up. I want to talk to our young men and also older men to help prevent anything like this from happening to them.</em></blockquote>
+         
+         
+        <strong><p>What has the transition from working at the Metropolitan Transportation Authority (MTA) to being an activist on the front lines of something so important and necessary for our country been like?</p></strong>
+         
+       <blockquote><em><strong>Gwen Carr:</strong> It’s different, but you have to do what you have to do. You have to do what’s necessary in order to create change. I can’t create change by myself, but collectively with everyone’s help I think we can create change.</em></blockquote>
+         
+        <strong><p>You’ve been marching and peacefully protesting since your son’s death. You even marched across the Edmund Pettus Bridge in Selma, Alabama to mark the 50th anniversary of “Bloody Sunday.” Do you think we will ever be able to stop marching?</p></strong>
+         
+        <blockquote><em><strong>Gwen Carr:</strong> I really hope so, but in order for that to happen we have to come together. All people have to come together. As long as we stay divided it’s not going to happen. We have to stop fighting each other. We have to stop killing each other. It’s senseless. We need to stop fighting over petty things and do what’s really important. What’s important is becoming united and standing up for what’s right.</em></blockquote>
+         
+        <strong><p>If you could reach out to all the protestors, victims, and their families and friends what would you want to say to them about moving forward?</p></strong>
+         
+        <blockquote><em><strong>Gwen Carr:</strong>  Let’s get this together. Yes sometimes we get mad and that’s where fires come from, but don’t burn down your town. Burn a candle for that a person who has fallen and then get out there and do something positive about it. I just can’t support violence. I want to approach it in a different way. We need to stay focused on the problem at hand. We have to do something positive to get the word out there. It doesn’t have to be marching, contribute in your own way to make a difference. </em></blockquote>
+         <br><br>
+        <p>Eric Garner was a loving man. His mother found out the extent of his kindness after his death. People he had been helping came forward to speak about his kindheartedness. He helped the homeless, his friends and strangers. A local reverend who runs a food pantry told Mrs. Carr, “Whenever I saw your son (Big E) he would stop and talk to me, but when he was leaving he would never say “Goodbye.” Instead he would always say, “Spread the love reverend, spread the love.”</p>
+        <br><br><br>
+        <p>The excessive force in policing unarmed men is a paramount issue, which has led to the loss of too many lives. In addition there is a pervasive side effect: our culture’s desensitization to these violent scenarios. While there are those remain highly disturbed by the images, videos and media coverage, there is a growing number of people who flip through these images because the violence has invaded our society and metastasized it. We must not forget the permanent holes created by these injuries and deaths. These individuals deserve justice and we must demand it. The only way to stop these injustices is to demand accountability for those we have already lost.</p>
+            <br>
+		</div>
+	</div>
+  <div class="section " id="section0">
+    <div>
+      <p><!--Page Break--></p>
+      <br><br>
+
+
+<h2 class="blog-post-title">Kean University, Change Makers Do Good in Miami</h2>
+            <p class="blog-post-meta" id="date">10 March 2015 03:41 <br><a href="#">Melissa Heron</a></p>
+
+            <img src="T:/bethechangeNewJersey.github.io-master/img/keanUni.jpg">
+
+            <p>Kean University students and Be The Change members Gabrielle Ardolino, Joseph Lentini, Jillian Mahon and their faculty advisor, Dr. Norma Bowewere chosen from among thousands to attend and exhibit at the Clinton Global Initiative University (CGI U) in Miami Florida, March 6 – 8th. They brought their altruistic Be The Changephilosophy to Miami University and the surrounding neighborhood.</p><br>
+
+            <p>On Saturday morning, the group attended their first meeting of the day hosted the Clinton Foundation, Vice Chair, Chelsea Clinton.</p><br>
+
+            <p>Professor Hans Rosling presented the Gapminder Foundation’s, Ignorance Project. The mission of the project is to “fight devastating ignorance with a fact based world view.”</p><br>
+
+            <p>He was followed by a panel which included, Diane Bryant, Senior Vice President and General Manager, Data Center Group, Intel Corporation, Christopher Barr, Director of Media Innovation, Knight Foundation and Brittany Wegner, student and founder of Cloud4Cancer.</p><br>
+             
+            <p>The panel discussed different ways to use data to bring commitments and passion to the world. They encouraged the CGI U commitment makers to use data as a tool to make better decisions. Brittany, a sophomore at Duke University, discovered a way to use computer science to assist in breast cancer diagnostics, her program has been extended to handle leukemia diagnostics based on genetic expression profiles.  She was inspired to start this project because her cousin was diagnosed with breast cancer and she wanted to help.</p><br>
+            <p>Ending the session Chelsea Clinton spoke to the limited categorization of young people as “future leaders,” instead of what they truly are, “leaders and disruptors,” here and now. The attendees then went to different skill building sessions before lunch.</p><br>
+
+            <p>During their lunch break the Be The Change team proceed to fulfill a tradition they fervently adhere to each time they visit a new place – contacting local charities and bringing them aid. Having already chosen the organization they would help, the day’s lunch break was a remarkable and concerted effort to deliver an impromptu pizza party to the women and children of “Lotus House,” a nearby women’s shelter.</p><br>
+
+            <p>As they drove through the streets of Miami toward the shelter a devastating fact was illuminated. They were startled by the dozens of homeless people they encountered on the drive. It was not the Miami of television commercials and billboards. It was a side of Miami that none of us expected. It is the antitheses of South Beach.</p><br>
+
+            <p>There were homeless people living on the streets and in abandoned lots. One man could be seen living out of a broken, black couch on a sidewalk. On another sidewalk a few blocks later someone had created a makeshift shelter from a dirty mattress. The numbers grew as we approached the shelter. But, the resolve of Be The Changewas not to be broken. They fulfilled their promise to the residents of Lotus House, bringing smiles, a little comfort and lots of hot pizza to its tenants, especially the children.</p><br>
+
+            <p>Afterwards they went into action retracing their route through the Miami streets. They fed the homeless and listened to their stories. There was no judgment, just humans being slowing down to connect to each other. It was breathtaking to see these New Jersey college students and their professor using their break from the harsh winter weather to care for others. The ability to be present and emotionally in tune with the needs of others was especially evident in the group’s leader, Norma Bowe, who is a trained nurse. “We always do our best no matter where we are,” she said.</p><br>
+
+            <p>The students followed her cue as much as the mined their own intuition. These New Jersey do-gooders returned to CGI U and resumed their day of activity. Listening, learning and presenting their CGI U commitment to action: Vertical Peace Gardens.</p><br>
+
+            <p>Their off-campus activity resonated with them, they were invigorated by their efforts and did a stellar job presenting their commitment to scores of people at the CGI U. They did Kean University and Be The Change proud.</p>
+            <br>
+    </div>
+  </div>
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
 			<div class="intro">
